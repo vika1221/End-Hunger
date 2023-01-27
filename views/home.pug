@@ -1,0 +1,46 @@
+extends base.pug
+
+block scripts 
+    script(src='/static/index.js')
+
+block style 
+    style 
+        include ../static/style.css
+
+block content 
+    section#introsection 
+        div    Welcome to the Food Donation World!! 
+        .small   Please Donate to end Hunger 
+
+    section#missionsection 
+            h2  our mission
+            div.card
+                h3 Daily Feeding Program
+                div.card-box
+                    div.card-img 
+                        img(src="/static/1.jpg")
+                    div.card-content
+                    p Please donte to end hunger
+            div.card
+                h3 Donate to NGOs
+                div.card-box
+                    div.card-img 
+                        img(src="/static/1.jpg")
+                    div.card-content
+                    p Please donte to end hunger
+            div.card
+                h3  Help to orphan childs 
+                div.card-box
+                    div.card-img 
+                        img(src="/static/1.jpg")
+                    div.card-content
+                    p Please donte to end hunger
+    section#sponsersection 
+            h2  our sponsers
+                div#sponser 
+                    img(src="/static/logo2.jpg",alt="sponser image",class="sponimg")
+                    img(src="/static/logo3.png",alt="sponser image",class="sponimg")
+                    img(src="/static/logo4.png",alt="sponser image",class="sponimg")
+block foot 
+    footer#footer   
+            | copyright © 2022 endhunger.com | All rights reserved
